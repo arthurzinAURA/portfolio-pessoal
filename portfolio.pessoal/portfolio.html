@@ -3,153 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Arthur Barros</title>
-    <style>
-        /* Estilos Gerais */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-
-        /* Cabeçalho */
-        header {
-            background: linear-gradient(135deg, #004a8d, #00a859);
-            color: white;
-            padding: 2rem text-align center;
-            text-align: center;
-        }
-
-        /* Navegação */
-        nav {
-            background: #333;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 1rem 1.5rem;
-            display: block;
-            transition: 0.3s;
-        }
-        nav a:hover {
-            background-color: #555;
-            color: #00ffa2;
-        }
-
-        /* Conteúdo Principal */
-        main {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        section {
-            background: white;
-            padding: 1.5rem;
-            margin-bottom: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            border-bottom: 2px solid #00a859;
-            padding-bottom: 0.5rem;
-            color: #004a8d;
-        }
-
-        /* Imagens */
-        img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            display: block;
-            margin: 1rem auto;
-        }
-
-        /* Rodapé */
-        footer {
-            text-align: center;
-            padding: 2rem;
-            background: #333;
-            color: white;
-            font-size: 0.9rem;
-        }
-
-        mark {
-            background-color: #c1ffda;
-            padding: 0 4px;
-        }
-    </style>
+    <title>Portfólio - Arthurzin Barros</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Portfólio de Estudante</h1>
-    <p>Conheça mais sobre a trajetória de Arthur Barros no IFTO</p>
+<header class="header">
+    <h1>Arthurzin Barros</h1>
+    <p>Estudante de Informática</p>
+
+    <a href="#hobbies" class="btn">Ver Hobbies</a>
 </header>
 
-<nav>
-    <ul>
-        <li><a href="#sobre">Sobre Mim</a></li>
-        <li><a href="#hobbies">Hobbies</a></li>
-        <li><a href="#lugares">Destinos</a></li>
-        <li><a href="#sonho">Sonho</a></li>
-    </ul>
-</nav>
+<section id="sobre" class="section">
+    <h2>Sobre Mim</h2>
+    <p>
+       Olá! Me chamo Arthur Barros, tenho 15 anos e atualmente estou cursando o 2º ano do Ensino Médio integrado ao curso Técnico em Informática no IFTO (Instituto Federal do Tocantins).
+     Sou natural de Gurupi, mas atualmente moro em Formoso do Araguaia. 
+    </p>
+</section>
 
-<main>
+<section id="hobbies" class="section dark">
 
-    <section id="sobre">
-        <h2>Sobre Mim</h2>
-        <p>Meu nome é <strong>Arthur Barros Guilherme</strong>, tenho 15 anos e sou natural de <strong>Gurupi</strong>, mas atualmente moro em <em>Formoso do Araguaia</em>.</p>
-        <p>Sou aluno do curso <strong>Técnico em Informática Integrado ao Ensino Médio</strong> no IFTO Campus Formoso do Araguaia.</p>
-        <p><mark>Busco sempre evoluir meus conhecimentos</mark> na área de tecnologia, aproveitando as oportunidades que o instituto oferece para me tornar um profissional capacitado no futuro.</p>
-    </section>
+    <h2>Hobbies</h2>
 
-    <section id="hobbies">
-        <h2>Meus Hobbies</h2>
-        <p>No meu tempo livre, o que eu mais gosto de fazer é:</p>
-        <ul>
-            <li>Jogar futebol</li>
-            <li>Asistir Jogo</li>
-            <li>Jogar bola com meus amigos</li>
-            <li>Jogar Free Fire com o carlos</li>
-        </ul>
-    </section>
+    <div class="grid">
+        <div class="card">
+            <h3>Jogar videogame</h3>
+            <p>Gosto de jogar videogame com amigos.</p>
+            <img src="https://i.pinimg.com/736x/ec/ae/61/ecae61031394b9e54ed312367e23befa.jpg" width="200" alt="videogame">
+        </div>
 
-    <section id="lugares">
-        <h2>Lugares que Quero Conhecer</h2>
-        <ol>
-            <li>Rússia</li>
-            <li>Suíça</li>
-            <li>Pais de Gales</li>
-        </ol>
-        <p>Meu interesse em visitar esses lugares é <strong>conhecer de perto culturas diferentes</strong>, entender como é o dia a dia nessas regiões e observar como a tecnologia e a história se misturam nesses lugares.</p>
-    </section>
+        <div class="card">
+            <h3>Asistir TV</h3>
+            <p>Passo parte assistindo jogos.</p>
+            <img src="https://i.pinimg.com/736x/bc/84/3f/bc843f27d29bac5733017030a38f2a15.jpg" width="200" alt="televisao">
+        </div>
 
-    <section id="sonho">
-        <h2>Meu Maior Sonho</h2>
-        <p>Meu maior objetivo de vida é ter a oportunidade de <strong>viajar por muitos países</strong>, conquistar minha independência financeira e manter uma <em>vida saudável</em> para aproveitar todas essas conquistas.</p>
-        <img src=https://mundoviajar.com.br/wp-content/uploads/2018/10/castle-1.jpg alt="Viagens pelo mundo">
-    </section>
+        <div class="card">
+            <h3>Jogar Futebol</h3>
+            <p>Gosto de jogar bola.</p>
+            <img src="./imagem/aura.jpg" alt="aura" width="200" alt="Jogando">
+             
+        </div>
+    </div>
+</section>
 
-</main>
+<!-- NOVA SEÇÃO -->
+<section id="sonho" class="section">
+
+    <h2>Meu Sonho</h2>
+
+    <p>
+        Meu maior sonho e poder ter uma vida sudavel, feliz e bem estruturada com minha familia.
+        Sonho em viajar varios paises da europa, e morar fora do Brasil.
+    </p>
+
+</section>
+
+<section id="contato" class="section">
+    <h2>Contato</h2>
+    <p>Email: Arthurbarrosguilherme@gmail.com</p>
+    <p>GitHub: github.com/arthurzinAURA</p>
+</section>
 
 <footer>
-    <p>&copy; 2026 Arthur Barros — Todos os direitos reservados — Projeto Integrador 2</p>
+    <p>© 2026 Arthurzin Barros - Todos os direitos reservados</p>
 </footer>
 
 </body>
